@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Grade Calculator</title>
+	<link rel="stylesheet" href="calculator.css" type="text/css" />
+</head>
+
+<body>
+	<script src="calculator.js" type="text/javascript" ></script>
+	<div id="main">
+		<h1 class="title">Grade Calculator</h1>
+
+		<div id="gradeTable">
+			<h3 class="maint">Activities</h3>
+			<p id="subt">Claim grades to specific activities.</p>
+			<!--
+			<form>
+				<table>
+					<tr class="theader"> <th>Name</th> <th>Student Name</th> <th>Percentage</th> <th>Grade</th> </tr>
+					<tr class="tbody"> <td>Activity 1</td> <td>A1</td> <td><input type="text" name="percentage"></input></td> <td><input type="text" name="score"></input>/<input type="text" name="total"></input></td> </tr>
+					<tr class="tbody"> <td>Activity 2</td> <td>A2</td> <td><input type="text" name="percentage"></input></td> <td><input type="text" name="score"></input>/<input type="text" name="total"></input></td> </tr>
+					<tr class="tbody"> <td>Activity 3</td> <td>A3</td> <td><input type="text" name="percentage"></input></td> <td><input type="text" name="score"></input>/<input type="text" name="total"></input></td> </tr>
+					<tr class="tbody"> <td>Activity 4</td> <td>A4</td> <td><input type="text" name="percentage"></input></td> <td><input type="text" name="score"></input>/<input type="text" name="total"></input></td> </tr>
+				</table>
+
+				<h3 class="maint">Result</h3>
+
+				<input type="submit" class="button" name="weighted"/>
+				<input type="submit" class="button" name="mean"/>
+			</form>
+			-->
+			<table>
+				<tr class="theader"> <th>Name</th> <th>Student Name</th> <th>Percentage</th> <th>Grade</th> </tr>
+				<tr class="tbody"> <td>Activity 1</td> <td>A1</td> <td><input type="text" name="percentage" id="p1"></input></td> <td><input type="text" name="score" id="g1"></input>/<input type="text" name="total" id="t1"></input></td> </tr>
+				<tr class="tbody"> <td>Activity 2</td> <td>A2</td> <td><input type="text" name="percentage" id="p2"></input></td> <td><input type="text" name="score" id="g2"></input>/<input type="text" name="total" id="t2"></input></td> </tr>
+				<tr class="tbody"> <td>Activity 3</td> <td>A3</td> <td><input type="text" name="percentage" id="p3"></input></td> <td><input type="text" name="score" id="g3"></input>/<input type="text" name="total" id="t3"></input></td> </tr>
+				<tr class="tbody"> <td>Activity 4</td> <td>A4</td> <td><input type="text" name="percentage" id="p4"></input></td> <td><input type="text" name="score" id="g4"></input>/<input type="text" name="total" id="t4"></input></td> </tr>
+			</table>
+
+			<h3 class="maint">Result</h3>
+			<p id="result"></p>
+			<button id="weight" onclick="getWeighted()">WEIGHTED</button>
+			<button id="mean" onclick="getMean()">MEAN</button>
+		</div>
+	</div>
+</body>
+</html>
