@@ -1,7 +1,7 @@
 class SayController < ApplicationController
   def hello
     @form_name = params['name']
-    @time = time.now
+    @time = Time.now
   end
 
   def goodbye
