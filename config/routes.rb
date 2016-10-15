@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :tokimons
+  resources :trainers
+  resources :tokimons
+  resources :trainers
+  resources :tokimons
   resources :people
   resources :things
   get 'say/hello'
